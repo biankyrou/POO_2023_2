@@ -10,4 +10,6 @@ public interface DAO <T>{
      T buscar (int id);
      List<T> buscarTodos();
 
+
+     //é uma estrutura padrão, está no slide
 }

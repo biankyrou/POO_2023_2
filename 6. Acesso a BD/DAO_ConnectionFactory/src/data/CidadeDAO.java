@@ -6,9 +6,11 @@ import java.util.List;
 
 
 public interface CidadeDAO extends DAO<Cidade> {
-    void  salvar(Cidade cidade);
-    void atualizar (Cidade cidade);
-    void apagar (Cidade cidade);
-    Cidade buscar (int id);
-    List<Cidade> buscarTodos();
+//    void  salvar(Cidade cidade);
+//    void atualizar (Cidade cidade);
+//    void apagar (Cidade cidade);
+//    Cidade buscar (int id);
+//    List<Cidade> buscarTodos();
+
+    //são opcionais, uma vez que eles já estendem o DAO<T>
 }

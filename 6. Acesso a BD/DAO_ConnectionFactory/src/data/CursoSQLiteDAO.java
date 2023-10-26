@@ -8,12 +8,11 @@ import java.util.List;
 
 
 public  class CursoSQLiteDAO implements CursoDAO{
-
     @Override
      public  void salvar(Curso c) {
         String sql = "INSERT INTO curso values (?,?)";
-        try(PreparedStatement stmt=ConnectionFactory.criaStatement(sql)){
-            stmt.setInt(1,c.getIdCurso());
+        try(PreparedStatement stmt=ConnectionFactory.criaStatement(sql)){       //abrindo conexão - chama a classe "ConnectionFactory)
+            stmt.setInt(1,c.getIdCurso());                 //passando os parâmetros (int idCurso, String nome)
             stmt.setString(2,c.getNome());
             stmt.executeUpdate();
         }catch (SQLException e) {

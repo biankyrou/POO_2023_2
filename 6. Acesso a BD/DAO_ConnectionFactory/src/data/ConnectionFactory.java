@@ -6,6 +6,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
+
+//uma classe somente para conexão - algo que sempre se repete na conexão com os bancos de Dados
+
 public abstract class ConnectionFactory  implements AutoCloseable{
     private static PreparedStatement stmt = null;
     private static Connection conn  = null;
